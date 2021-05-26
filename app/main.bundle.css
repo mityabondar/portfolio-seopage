@@ -2091,18 +2091,12 @@ button.blank {
         margin-bottom: 2rem;
     }
 
-    .reviews__row {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
     .reviews__title {
         font-size: xx-large;
         margin-bottom: 1.5rem;
     }
 
     .review {
-        max-width: 16rem;
         padding-top: 1.5rem;
         padding-left: 1rem;
         padding-right: 1rem;
