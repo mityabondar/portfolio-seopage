@@ -129,10 +129,6 @@
         font-size: large;
     }
 
-    .work__buttons {
-        flex-direction: column;
-    }
-
     .work__button {
         font-size: small;
     }
