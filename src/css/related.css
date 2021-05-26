@@ -1,0 +1,120 @@
+.related {
+    flex-grow: 1;
+    max-width: 22rem;
+    width: 100%;
+}
+
+.related__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.related__title {
+    font-size: larger;
+    margin: 0;
+}
+
+.related__link:focus,
+.related__link:active {
+    outline: 3px solid var(--c-brand-focus);
+    outline-offset: 2px;
+    background-image: none;
+}
+
+.tabs__slider {
+    margin: 0;
+    z-index: 1;
+}
+
+.tabs__inner {
+    padding: 0;
+    margin: 0;
+}
+
+.tabs__button {
+    position: relative;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: .5rem;
+    margin-left: 0;
+    font-size: medium;
+    font-weight: 700;
+    white-space: nowrap;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-family: inherit;
+    background: none;
+    outline: none;
+    transition: color .3s, border-color .3s;
+}
+
+.tabs__button:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.tabs__button:hover,
+.tabs__button:focus,
+.tabs__button:active {
+    color: var(--c-brand);
+    transition-duration: 0s;
+}
+
+.tabs__button[aria-selected="true"] {
+    color: var(--c-brand);
+    border-bottom: 2px solid var(--c-brand);
+    z-index: 1;
+}
+
+.tabs__tab:active,
+.tabs__tab:focus {
+    outline: none;
+}
+
+.tabs__list {
+    margin: 1.5rem 0;
+    list-style-type: none;
+}
+
+.tabs__list .li {
+    margin: 1rem 0;
+}
+
+.tabs__link:focus,
+.tabs__link:active {
+    outline: 3px solid var(--c-brand-focus);
+    outline-offset: 2px;
+    background-image: none;
+}
+
+.tabs__slider .slider__control--right {
+    background-image: linear-gradient(to left, var(--c-background--accent) 60%, rgba(255, 255, 255, 0));
+}
+
+.tabs__slider .slider__control--left {
+    background-image: linear-gradient(to right, var(--c-background--accent) 60%, rgba(255, 255, 255, 0));
+}
+
+@media (max-width: 50rem) {
+    .related {
+        max-width: 100%;
+    }
+
+    .related__title {
+        font-size: medium;
+    }
+
+    .tabs__tab {
+        font-size: small;
+    }
+
+    .tabs__button {
+        font-size: small;
+    }
+
+    .tabs__button:not(:last-of-type) {
+        margin-right: 1.5rem;
+    }
+}

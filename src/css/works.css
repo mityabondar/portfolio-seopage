@@ -1,0 +1,157 @@
+.works__container {
+    margin-top: 6rem;
+}
+
+.works__title {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.works__description {
+    text-align: center;
+    font-weight: 500;
+}
+
+.works__slider {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem 2rem 2rem;
+    word-break: break-word;
+    border-radius: 2rem;
+    background-color: var(--c-background--accent);
+}
+
+.work:first-of-type {
+    margin-left: 0;
+}
+
+.work__heading {
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+}
+
+.work__icon {
+    min-width: 3rem;
+}
+
+.work__content {
+    word-break: break-word;
+}
+
+.work__title {
+    display: flex;
+    align-items: center;
+    font-size: large;
+    word-break: break-word;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1rem;
+}
+
+.work__category {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.work__pages {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.work__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -.5rem;
+}
+
+.work__button {
+    max-width: 9rem;
+    width: 100%;
+    font-size: small;
+    font-family: inherit;
+    font-weight: 700;
+    text-align: center;
+    padding: 1em 2em;
+    border-radius: 3px;
+    margin: .5rem;
+    border: 2px solid var(--c-brand);
+}
+
+.work__button:hover,
+.work__button:focus,
+.work__button:active {
+    border-color: var(--c-brand-hover);
+    background-color: var(--c-brand-hover);
+}
+
+.work__button:focus,
+.work__button:active {
+    box-shadow: 0 0 0 4px var(--c-brand-focus);
+}
+
+.work__button--hollow {
+    background-color: transparent;
+    color: var(--c-brand);
+}
+
+.work__button--hollow:hover,
+.work__button--hollow:focus,
+.work__button--hollow:active {
+    background-color: var(--c-brand-transparent);
+}
+
+.work__button--hollow:focus,
+.work__button--hollow:active {
+    box-shadow: 0 0 0 4px var(--c-brand-focus);
+}
+
+@media (max-width: 50rem) {
+    .work {
+        width: 18rem;
+        border-radius: 1.5rem;
+        padding-top: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .work__title {
+        font-size: large;
+    }
+
+    .work__buttons {
+        flex-direction: column;
+    }
+
+    .work__button {
+        font-size: small;
+    }
+
+    .works__container {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .works__title {
+        margin-top: 2rem;
+        font-size: xx-large;
+    }
+
+    .works__slider {
+        margin-top: 1.5rem;
+    }
+
+    .work__pages {
+        margin-bottom: 1.5rem;
+    }
+}

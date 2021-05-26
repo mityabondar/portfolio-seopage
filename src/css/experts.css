@@ -1,0 +1,121 @@
+.experts__container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.experts__slider {
+    margin-top: 4rem;
+}
+
+.experts__title {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.experts__description {
+    text-align: center;
+    font-weight: 500;
+}
+
+.experts__description > .p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.expert {
+    display: flex;
+}
+
+.expert__avatar {
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.expert__inner {
+    margin-left: 1.5rem;
+    word-break: break-word;
+}
+
+.expert__name {
+    font-size: larger;
+    margin: 0;
+}
+
+.expert__rating {
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.expert__star {
+    margin-right: .5rem;
+}
+
+.expert__position {
+    font-size: small;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.expert__activity {
+    font-size: small;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.expert__hire {
+    font-size: medium;
+    font-weight: 700;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    text-align: center;
+    border-radius: 3px;
+}
+
+@media (max-width: 80rem) {
+    .experts__container {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .experts__title {
+        font-size: xx-large;
+        margin-top: 2rem;
+    }
+
+    .expert {
+        flex-direction: column;
+    }
+
+    .expert__name {
+        font-size: large;
+    }
+    
+    .expert:first-of-type {
+        margin-left: 0;
+    }
+
+    .expert__avatar {
+        width: 8rem;
+        height: 8rem;
+        margin-bottom: 1rem;
+    }
+
+    .expert__inner {
+        margin-left: 0;
+    }
+
+    .expert__hire {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .experts__description {
+        font-size: small;
+    }
+}

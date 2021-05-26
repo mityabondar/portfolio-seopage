@@ -1,0 +1,16 @@
+.slider-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0;
+}
+
+.slider-nav__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 .5rem;
+    padding: 1rem;
+    background: none;
+    border: none;
+}

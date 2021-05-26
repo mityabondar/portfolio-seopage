@@ -1,0 +1,151 @@
+.footer {
+    padding: 0;
+}
+
+.footer__main-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-top: 3.5rem;
+    background-color: var(--c-background);
+    max-width: 80rem;
+}
+
+.help {
+    display: flex;
+    margin: 0 3rem 1rem 0;
+    flex-direction: column;
+}
+
+.help__phone {
+    margin-bottom: .5rem;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.help__button,
+.help__email {
+    margin-bottom: 1.5rem;
+}
+
+.help__button-link {
+    border-radius: 3px;
+    padding: 1em 2.5em;
+    font-size: medium;
+    font-weight: 700;
+}
+
+.footer__links-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__links-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 12rem;
+}
+
+.footer__links-wrapper {
+    padding-right: .5rem;
+}
+
+.footer__link,
+.footer__links-title {
+    margin-bottom: .75rem;
+}
+
+.help__google-link {
+    display: inline-block;
+    transition: box-shadow .3s, border-radius .3s;
+}
+
+.help__google-link:focus,
+.help__google-link:active {
+    outline: none;
+    transition-duration: 0s;
+    border-radius: 3px;
+    box-shadow:
+        inset 0 0 0 1px rgba(0, 0, 0, .09),
+        0 0 0 4px var(--c-brand-focus);
+}
+
+.help__google-image {
+    height: 2rem;
+}
+
+.accent-color-background {
+    background-color: var(--c-background--accent);
+}
+
+.footer__additional-info {
+    padding: 2rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: small;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.footer__info-item {
+    margin: .5rem;
+    display: flex;
+    align-items: center;
+}
+
+.wrapbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -.25rem;
+}
+
+.wrapbox--inner {
+    margin: 0;
+}
+
+.wrapbox__item {
+    margin: .25rem;
+}
+
+.help__phone-link {
+    font-size: x-large;
+}
+
+.footer__info-link {
+    text-decoration: none;
+    line-height: 0;
+    display: inline-block;
+    transition: box-shadow .3s;
+}
+
+.footer__info-link--rounded {
+    border-radius: 100%;
+}
+
+.footer__info-link:active,
+.footer__info-link:focus {
+    outline: none;
+    transition-duration: 0s;
+    box-shadow:
+        inset 0 0 0 1px rgba(0, 0, 0, .09),
+        0 0 0 4px var(--c-brand-focus);
+}
+
+.footer__payment-img {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+@media (max-width: 50rem) {
+    .footer__additional-info {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: -.5rem;
+        margin-left: -.5rem;
+    }
+}

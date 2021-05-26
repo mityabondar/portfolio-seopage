@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack --mode=development --config webpack.config.js"
+  },
+  "author": "Dmitry Bondar",
+  "license": "ISC",
+  "browser": {
+    "[module-name]": false
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "imports-loader": "^3.0.0",
+    "mini-css-extract-plugin": "^1.6.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "swiper": "^6.6.2"
+  }
+}
